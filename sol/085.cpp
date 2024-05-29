@@ -24,7 +24,7 @@ int main() {
 			long long a = vec[i], b = vec[j], c = 0;
 			if ((K / a) < b) continue;
 			if (K % (a * b) != 0LL) continue;
-			c = K / (vec[i] * vec[j]);
+			c = K / (a * b);
 			if (b <= c) Answer += 1;
 		}
 	}
